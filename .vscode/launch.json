@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Launch",
+            "program": "wasmtime",
+            "args": ["-g","${command:cmake.launchTargetPath}"],
+            "cwd": "${workspaceFolder}",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${env:PATH}:${command:cmake.getLaunchTargetDirectory}"
+                }
+            ],
+            "initCommands": [
+                "settings set plugin.jit-loader.gdb.enable on"
+            ]
+        }
+    ]
+}
