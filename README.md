@@ -3,6 +3,7 @@
 [中文版本](docs/README_zh.md)
 
 ## Summary
+Use CodeLLDB debugging WebAssembly Program in VSCode.
 
 1. Add WASI-SDK toolchain to VSCode CMake Tools Kits.
 2. Build C/C++ sources to WebAssembly binary file via WASI-SDK toolchain.
@@ -29,7 +30,7 @@ Install extension on Visual Studio Code:
 
 ### Setup CMake Tools extension configuration
 
-Modify `${ROOT_PROJECT_DIR}/.vscode/cmake-kts.json` file for adding WASI-SDK toolchain to VSCode CMake Tools Kits.
+Modify `${ROOT_PROJECT_DIR}/.vscode/cmake-kits.json` file for adding WASI-SDK toolchain to VSCode CMake Tools Kits.
 
 Set `toolchainFile` to `${path_to_wasi_sdk_dir}/share/camke/wasi-sdk.cmake`
 
