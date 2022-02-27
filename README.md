@@ -3,7 +3,8 @@
 [中文版本](docs/README_zh.md)
 
 ## Summary
-Use CodeLLDB debugging WebAssembly Program in VSCode.
+
+Use CodeLLDB debugging WebAssembly WASI program in VSCode.
 
 1. Add WASI-SDK toolchain to VSCode CMake Tools Kits.
 2. Build C/C++ sources to WebAssembly binary file via WASI-SDK toolchain.

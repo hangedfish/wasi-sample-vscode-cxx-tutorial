@@ -2,6 +2,8 @@
 
 ## 过程概要
 
+使用 VSCode CodeLLDB 调试 WebAssembly WASI 程序
+
 1. 添加 WASI-SDK 工具链到 VSCode CMake Tools 插件配置；
 2. 使用 WASI-SDK 工具链构建 C/C++ 源码到 WebAssembly 二进制文件；
 3. 使用 lldb 调试 Wasmtime，同时让 Wasmtime 加载构建出来的 WebAssembly 二进制文件。
